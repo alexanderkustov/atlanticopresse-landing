@@ -1,0 +1,106 @@
+<html>
+<head>
+	<title>AtlanticoNeue</title>
+	<meta charset="UTF-8">
+
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="js/backstretch.js"/></script>
+	<style type="text/css">
+	html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,	article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	a{vertical-align: baseline;}
+	body {
+		line-height: 1;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+
+
+	.button{
+		font-size: 13px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: .2em;
+		border-width: 2px;
+		border-style: solid;
+		font-weight: 700;
+		height: 40px;
+		line-height: 36px;
+		padding: 0 15px;
+		display: inline-block;
+		text-decoration: none;
+		text-align: center;
+		cursor: pointer;
+		position: relative;
+		background: transparent;
+		color: #898989;
+		border-color: #c4c4c4;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+	}
+	
+	.button.image {
+		color: white;
+		border-color: #fff;
+	}
+
+		.button:hover {
+		background-color: #fff;
+border-color: #fff;
+		color: black;
+	}
+	</style>
+	
+</head>
+
+<body style="width:600px; height:450px;">
+	<img src="img/logo2.png" style="width:80%; margin:0 auto; text-align:center; padding: 5px 15px 0px 15px;">
+
+	<div style="position:absolute; top:150px; left: 15px; width:400px;">
+
+		<a href="" class="button image">imagens e videos editoriais</a>
+		<br><br>
+		<a href="" class="button image">imagens e videos criativos</a>
+		<br><br>
+		<a href="" class="button image">soluções de marketing editorial</a>
+		<br><br><br><br>
+		<a href="" class="button image">contactos</a>
+	</div>
+
+	<div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 450px; width: 600px; z-index: -999999; position: fixed;"></div>
+
+	<script type="text/javascript">
+	$.backstretch([
+		"img/1.jpg"
+		, "img/2.jpg"
+		, "img/3.jpg"
+		], {duration: 5000, fade: 950});
+	</script>
+</body>
+</html>
