@@ -6,69 +6,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
-      <link rel="stylesheet" type="text/css" href="css/animations.css">
-      <script src="http://code.jquery.com/jquery.js"></script>
-      <script src="js/backstretch.js"/></script>
-      <style type="text/css">
-      
-      body,h4,h5{
-      font-family: 'Arvo', serif;
-      }
-      
-      b{
-      font-weight: 700;
-      }
+      <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/animations.css">
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="js/backstretch.js"/></script>
+        <style type="text/css">
+        
+        body,h4,h5{
+        font-family: 'Arvo', serif;
+        }
+        
+        b{
+        font-weight: 700;
+        }
+        .btn{
+        border-radius: 0px;
+        -moz-box-shadow: 0 3px rgba(0,0,0,0.1), inset 0 -4px rgba(0,0,0,0.1);
+        -webkit-box-shadow: 0 3px rgba(0,0,0,0.1), inset 0 -4px rgba(0,0,0,0.1);
+        box-shadow: 0 3px rgba(0,0,0,0.1), inset 0 -4px rgba(0,0,0,0.1);
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        }
+        .btn-danger{
+        background: #f39c12;
+        border: 1px solid #f39c12;
+        }
+        .btn-info{
+        background: #d35400;
+         border: 1px solid #d35400;
+        }
+        .btn-warning{
+        background: #c0392b;
+         border: 1px solid #c0392b;
+        }
 
-      .btn{
-      border-radius: 0px;
-      -moz-box-shadow: 0 3px rgba(0,0,0,0.1), inset 0 -4px rgba(0,0,0,0.1);
-      -webkit-box-shadow: 0 3px rgba(0,0,0,0.1), inset 0 -4px rgba(0,0,0,0.1);
-      box-shadow: 0 3px rgba(0,0,0,0.1), inset 0 -4px rgba(0,0,0,0.1);
-      -webkit-border-radius: 6px;
-      -moz-border-radius: 6px;
-      }
-      </style>
-    </head>
-    <body>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-lg-offset-2 text-center slideRight" style="margin: 60px 0px 0px 0px; border-radius: 4px; background:rgba(149, 165, 166, 0.95); padding:30px 0px 40px 0px;">
-            <img src="logo2.png" class="text-center" style="width: 80%;">
+         .btn-danger:hover{
+        background: #f1c40f;
+        border: 1px solid #f1c40f;
+        }
+        .btn-info:hover{
+        background: #e67e22;
+         border: 1px solid #e67e22;
+        }
+        .btn-warning:hover{
+        background: #e74c3c;
+         border: 1px solid #e74c3c;
+        }
 
-            <h4><i>Network de Conteúdos</i></h4>
+        nav a {
+        position: relative;
+        display: inline-block;
+        margin: 15px 25px;
+        outline: none;
+        color: #333;
+        text-decoration: none;
+        font-family: Quicksand;
+        letter-spacing: 1px;
+        font-weight: 400;
+        text-shadow: 0 0 1px rgba(255,255,255,0.3);
+        font-size: 1.35em;
+        }
+        nav a:hover,
+        nav a:focus {
+        outline: none;
+        color:#333;
+        text-decoration: none;
+        }
+        /* Effect 12: circle */
+        .cl-effect-12 a::before,
+        .cl-effect-12 a::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        border: 2px solid rgba(0,0,0,0.1);
+        border-radius: 50%;
+        content: '';
+        opacity: 0;
+        -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+        -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+        transition: transform 0.3s, opacity 0.3s;
+        -webkit-transform: translateX(-50%) translateY(-50%) scale(0.2);
+        -moz-transform: translateX(-50%) translateY(-50%) scale(0.2);
+        transform: translateX(-50%) translateY(-50%) scale(0.2);
+        }
+        .cl-effect-12 a::after {
+        width: 90px;
+        height: 90px;
+        border-width: 6px;
+        -webkit-transform: translateX(-50%) translateY(-50%) scale(0.8);
+        -moz-transform: translateX(-50%) translateY(-50%) scale(0.8);
+        transform: translateX(-50%) translateY(-50%) scale(0.8);
+        }
+        .cl-effect-12 a:hover::before,
+        .cl-effect-12 a:hover::after,
+        .cl-effect-12 a:focus::before,
+        .cl-effect-12 a:focus::after {
+        opacity: 1;
+        -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+        -moz-transform: translateX(-50%) translateY(-50%) scale(1);
+        transform: translateX(-50%) translateY(-50%) scale(1);
+        }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-lg-offset-2 text-center slideRight" style="margin: 60px 0px 0px 0px; border-radius: 4px; background:rgba(149, 165, 166, 0.95); padding:30px 0px 40px 0px;">
+              <img src="logo2.png" class="text-center" style="width: 80%;">
+              
+              <nav class="cl-effect-12" id="cl-effect-12">
+                <a href="#">Network de Conteúdos</a>
+              </nav>
+              <br>
+              
+              
+              <a href="#" style="width:90%; margin-top:10px;" class="btn btn-danger btn-lg">Imagens e Videos <b>Editorial</b></a>
+              
+              <br><br>
+              
+              <a href="#" style="width:90%" class="btn btn-info btn-lg">Imagens e Videos <b>Criativos</b></a>
+              
+              <br><br>
+              
+              <a href="#" style="width:90%" class="btn btn-warning btn-lg">Soluçoes de <b>Marketing Editorial</b></a>
+              
+            <img src="1.jpg" /><img src="3.jpg" /><img src="4.jpg" />
             <br>
-           
-            
-            <a href="#" style="width:60%; margin-top:10px;" class="btn btn-danger btn-lg"><b>Comprar</b><br>Imagens e Videos<br><b>Editorial</b></a>
-            
-            <br><br>
-            
-            <a href="#" style="width:60%" class="btn btn-info btn-lg"><b>Comprar</b><br>Imagens e Videos<br><b>Criativos</b></a>
-            
-            <br><br>
-            
-            <a href="#" style="width:60%" class="btn btn-warning btn-lg">Soluçoes de <br><b>Marketing <br> Editorial</b></a>
-            
-            <p style="margin-top: 15px;">&nbsp;</p>
-            
-            <h5>Rua do Salitre, nº 84 - 4º Dtº
-            <br>
-            1250-202 Lisboa,Portugal
-            <br>
-            <a href="tel:00351213570785" style="color:white;">Tel.: (+351) 21 357 07 85</a>
-            <br>
-            <a href="tel:00351213570785" style="color:white;">Fax: (+351) 21 357 06 63</a>
-            </h5>
-            <br>
-            <p style="position:absolute; width: 100%; bottom: 5px; margin:0 auto;">
-            &copy; 2013 - Todos os Direitos Reservados</p>
+              <img src="5.jpg" /><img src="6.jpg" /><img src="7.jpg" />
+              <h6>Rua do Salitre, nº 84 - 4º Dtº
+              <br>
+              1250-202 Lisboa,Portugal
+              <br>
+              <a href="tel:00351213570785" style="color:white;">Tel.: (+351) 21 357 07 85</a>
+              <br>
+              <a href="tel:00351213570785" style="color:white;">Fax: (+351) 21 357 06 63</a>
+              <br>
+              <a href="mailto:geral@atlanticopress.pt" style="color:white;">geral@atlanticopress.pt</a>
+              </h6>
+              <br>
+              <p style="position:absolute; width: 100%; bottom: 5px; margin:0 auto;">
+              &copy; 2013 - Todos os Direitos Reservados</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="backstretch"  style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 450px; width: 600px; z-index: -999999; position: fixed;"></div>
-      <script type="text/javascript">
-      $.backstretch(["img/0.jpg","img/1.jpg","img/2.jpg","img/3.jpg","img/4.jpg","img/5.jpg","img/6.jpg","img/7.jpg", {speed: 150}]);
-      </script>
-      <script src="js/bootstrap.min.js"></script>
-    </body>
-  </html>
+        <div class="backstretch"  style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 450px; width: 600px; z-index: -999999; position: fixed;"></div>
+        <script type="text/javascript">
+        $.backstretch(["img/0.jpg","img/1.jpg","img/2.jpg","img/3.jpg","img/4.jpg","img/5.jpg","img/6.jpg","img/7.jpg", {speed: 150}]);
+        </script>
+        <script src="js/bootstrap.min.js"></script>
+      </body>
+    </html>
