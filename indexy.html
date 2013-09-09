@@ -1,177 +1,187 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Atlantico Presse</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
-      <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" type="text/css" href="css/animations.css">
-        <script src="http://code.jquery.com/jquery.js"></script>
-        <script src="js/backstretch.js"/></script>
-        <style type="text/css">
-        
-        body,h4,h5{
-        font-family: 'Arvo', serif;
-        }
-        
-        b{
-        font-weight: 700;
-        }
-        .btn{
-        border-radius: 0px;
-        -moz-box-shadow: 0 3px rgba(0,0,0,0.1), inset 0 -4px rgba(0,0,0,0.1);
-        -webkit-box-shadow: 0 3px rgba(0,0,0,0.1), inset 0 -4px rgba(0,0,0,0.1);
-        box-shadow: 0 3px rgba(0,0,0,0.1), inset 0 -4px rgba(0,0,0,0.1);
-        -webkit-border-radius: 6px;
-        -moz-border-radius: 6px;
-        }
-        .btn-danger{
-        background: #16a085;
-        border: 1px solid #16a085;
-        }
-        .btn-info{
-        background: #3498db;
-         border: 1px solid #3498db;
-        }
-        .btn-warning{
-        background: #c0392b;
-         border: 1px solid #c0392b;
-        }
+<head>
+	<title>Atlantico Presse</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/animations.css">
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script src="js/backstretch.js"/></script>
+	<style type="text/css">
 
-         .btn-danger:hover{
-        background: #1abc9c;
-        border: 1px solid #16a085;
-        }
-        .btn-info:hover{
-        background: #2980b9;
-         border: 1px solid #2980b9;
-        }
-        .btn-warning:hover{
-        background: #e74c3c;
-         border: 1px solid #e74c3c;
-        }
+		body,h4,h5{
+			font-family: 'Arvo', serif;
+		}
 
-        nav a {
-        position: relative;
-        display: inline-block;
-        margin: 15px 25px;
-        outline: none;
-        color: #333;
-        text-decoration: none;
-        font-family: Quicksand;
-        letter-spacing: 1px;
-        font-weight: 400;
-        text-shadow: 0 0 1px rgba(255,255,255,0.3);
-        font-size: 1.35em;
-        }
-        nav a:hover,
-        nav a:focus {
-        outline: none;
-        color:#333;
-        text-decoration: none;
-        }
-        /* Effect 12: circle */
-        .cl-effect-12 a::before,
-        .cl-effect-12 a::after {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 100px;
-        height: 100px;
-        border: 2px solid rgba(0,0,0,0.1);
-        border-radius: 50%;
-        content: '';
-        opacity: 0;
-        -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-        -moz-transition: -moz-transform 0.3s, opacity 0.3s;
-        transition: transform 0.3s, opacity 0.3s;
-        -webkit-transform: translateX(-50%) translateY(-50%) scale(0.2);
-        -moz-transform: translateX(-50%) translateY(-50%) scale(0.2);
-        transform: translateX(-50%) translateY(-50%) scale(0.2);
-        }
-        .cl-effect-12 a::after {
-        width: 90px;
-        height: 90px;
-        border-width: 6px;
-        -webkit-transform: translateX(-50%) translateY(-50%) scale(0.8);
-        -moz-transform: translateX(-50%) translateY(-50%) scale(0.8);
-        transform: translateX(-50%) translateY(-50%) scale(0.8);
-        }
-        .cl-effect-12 a:hover::before,
-        .cl-effect-12 a:hover::after,
-        .cl-effect-12 a:focus::before,
-        .cl-effect-12 a:focus::after {
-        opacity: 1;
-        -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
-        -moz-transform: translateX(-50%) translateY(-50%) scale(1);
-        transform: translateX(-50%) translateY(-50%) scale(1);
-        }
+		b{
+			font-weight: 700;
+		}
+		.btn{
+			border-radius: 0px;
+			-moz-box-shadow: 0 3px rgba(0,0,0,0.1), inset 0 -4px rgba(0,0,0,0.1);
+			-webkit-box-shadow: 0 3px rgba(0,0,0,0.1), inset 0 -4px rgba(0,0,0,0.1);
+			box-shadow: 0 3px rgba(0,0,0,0.1), inset 0 -4px rgba(0,0,0,0.1);
+			-webkit-border-radius: 6px;
+			-moz-border-radius: 6px;
+		}
+		.btn-danger{
+			background: #16a085;
+			border: 1px solid #16a085;
+		}
+		.btn-info{
+			background: #3498db;
+			border: 1px solid #3498db;
+		}
+		.btn-warning{
+			background: #c0392b;
+			border: 1px solid #c0392b;
+		}
 
-        .bluebar{
-        	background-color: rgba(64, 91, 126, 0.57);
-text-shadow: 0 0 #080808;
--moz-box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.48);
--webkit-box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.48);
-box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.48);
--webkit-border-radius: 2px;
--moz-border-radius: 2px;
-border-radius: 2px;
-border-bottom: 1px solid white;
-border-color: rgba(255, 255, 255, 0.44);
-        }
-        </style>
-      </head>
-      <body>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-lg-offset-2 text-center slideRight bluebar" style="margin: 60px 0px 0px 0px; border-radius: 4px; padding:30px 0px 40px 0px;">
-              <img src="logo2.png" class="text-center" style="width: 80%;">
-              
-              <nav class="cl-effect-12" id="cl-effect-12">
-                <a href="#" style="color:#ecf0f1; font-weight:bolder;">NETWORK DE CONTEUDOS</a>
-              </nav>
-              <br>
-              
-              
-              <a href="#" style="width:90%; margin-top:10px;" class="btn btn-danger btn-lg">Imagens e Videos <b>EDITORIAL</b></a>
-              
-              <br><br>
-              
-              <a href="#" style="width:90%" class="btn btn-info btn-lg">Imagens e Videos <b>CRIATIVOS</b></a>
-              
-              <br><br>
-              
-              <a href="#" style="width:90%" class="btn btn-warning btn-lg">Soluçoes de <b>MARKETING EDITORIAL</b></a>
-              <br><br>
-			
-			<div class="row">
-           	
-       <img src="logo/sun.png"> 
-       <img src="logo/figaro.png"> 
-       <img src="logo/times.png">
-<br><br>
-<img src="logo/alamy.png"> 
-       <img src="logo/press.png"> 
-       <img src="logo/petra.png">
-            </div>
-            <br>
-              <a href="tel:00351213570785" style="color:white;">Tel.: (+351) 21 357 07 85</a>
-              <br>
-             
-              <a href="mailto:geral@atlanticopress.pt" style="color:white;">geral@atlanticopress.pt</a>
-              </h6>
-              <br>
-              <p style="position:absolute; width: 100%; bottom: 5px; margin:0 auto;color:rgba(255,255,255,0.91)">
-              &copy; 2013 - Todos os Direitos Reservados</p>
-            </div>
-          </div>
-        </div>
-        <div class="backstretch"  style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 450px; width: 600px; z-index: -999999; position: fixed;"></div>
-        <script type="text/javascript">
-        $.backstretch(["img/0.jpg","img/1.jpg","img/2.jpg","img/3.jpg","img/4.jpg","img/5.jpg","img/6.jpg","img/7.jpg", {speed: 150}]);
-        </script>
-        <script src="js/bootstrap.min.js"></script>
-      </body>
-    </html>
+		.btn-danger:hover{
+			background: #1abc9c;
+			border: 1px solid #16a085;
+		}
+		.btn-info:hover{
+			background: #2980b9;
+			border: 1px solid #2980b9;
+		}
+		.btn-warning:hover{
+			background: #e74c3c;
+			border: 1px solid #e74c3c;
+		}
+
+		nav a {
+			position: relative;
+			display: inline-block;
+			margin: 15px 25px;
+			outline: none;
+			color: #333;
+			text-decoration: none;
+			font-family: Quicksand;
+			letter-spacing: 1px;
+			font-weight: 400;
+			text-shadow: 0 0 1px rgba(255,255,255,0.3);
+			font-size: 1.35em;
+		}
+		nav a:hover,
+		nav a:focus {
+			outline: none;
+			color:#333;
+			text-decoration: none;
+		}
+		/* Effect 12: circle */
+		.cl-effect-12 a::before,
+		.cl-effect-12 a::after {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 100px;
+			height: 100px;
+			border: 2px solid rgba(0,0,0,0.1);
+			border-radius: 50%;
+			content: '';
+			opacity: 0;
+			-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+			-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+			transition: transform 0.3s, opacity 0.3s;
+			-webkit-transform: translateX(-50%) translateY(-50%) scale(0.2);
+			-moz-transform: translateX(-50%) translateY(-50%) scale(0.2);
+			transform: translateX(-50%) translateY(-50%) scale(0.2);
+		}
+		.cl-effect-12 a::after {
+			width: 90px;
+			height: 90px;
+			border-width: 6px;
+			-webkit-transform: translateX(-50%) translateY(-50%) scale(0.8);
+			-moz-transform: translateX(-50%) translateY(-50%) scale(0.8);
+			transform: translateX(-50%) translateY(-50%) scale(0.8);
+		}
+		.cl-effect-12 a:hover::before,
+		.cl-effect-12 a:hover::after,
+		.cl-effect-12 a:focus::before,
+		.cl-effect-12 a:focus::after {
+			opacity: 1;
+			-webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+			-moz-transform: translateX(-50%) translateY(-50%) scale(1);
+			transform: translateX(-50%) translateY(-50%) scale(1);
+		}
+
+		.bluebar{
+			background-color: rgba(64, 91, 126, 0.57);
+			text-shadow: 0 0 #080808;
+			-moz-box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.48);
+			-webkit-box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.48);
+			box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.48);
+			-webkit-border-radius: 2px;
+			-moz-border-radius: 2px;
+			border-radius: 2px;
+			border-bottom: 1px solid white;
+			border-color: rgba(255, 255, 255, 0.44);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-lg-offset-2 text-center slideRight bluebar" style="margin: 60px 0px 0px 0px; border-radius: 4px; padding:10px 0px 20px 0px;">
+				<img src="logo2.png" class="text-center" style="width: 80%;">
+
+				<nav class="cl-effect-12" id="cl-effect-12">
+					<a href="#" style="color:#ecf0f1; font-weight:bolder;">NETWORK DE CONTEUDOS</a>
+				</nav>
+				<br>
+
+
+				<a href="#" style="width:95%; margin-top:10px;" class="btn btn-danger btn-lg">Imagens e Videos <b>EDITORIAL</b></a>
+
+				<br><br>
+
+				<a href="#" style="width:95%" class="btn btn-info btn-lg">Imagens e Videos <b>CRIATIVOS</b></a>
+
+				<br><br>
+
+				<a href="#" style="width:95%" class="btn btn-warning btn-lg">Soluçoes de <b>MARKETING EDITORIAL</b></a>
+				<br><br>
+
+				<div class="row">
+					<div class="col-md-12">
+						<img src="logo/sun.png" class="img-responsive">
+						<img src="logo/figaro.png" class="img-responsive">
+						<img src="logo/times.png" class="img-responsive">
+						
+						<br>
+						<br>
+						<img src="logo/io.png" class="img-responsive"> 
+						<img src="logo/petra.png" class="img-responsive">
+						<img src="logo/alamy.png" class="img-responsive"> 
+						
+						<br>
+						<br>
+						<img src="logo/efe.png" class="img-responsive"> 
+						<img src="logo/imagesource.png" class="img-responsive">
+						<img src="logo/press.png" class="img-responsive">
+				</div>
+					
+				</div>
+				<br>
+				<a href="tel:00351213570785" style="color:white;">Tel.: (+351) 21 357 07 85</a>
+				<br>
+
+				<a href="mailto:geral@atlanticopress.pt" style="color:white;">geral@atlanticopress.pt</a>
+			</h6>
+			<br>
+			<p style="position:absolute; width: 100%; bottom: 5px; margin:0 auto;color:rgba(255,255,255,0.91); font-size:8px;">
+				&copy; 2013 - Todos os Direitos Reservados</p>
+			</div>
+		</div>
+	</div>
+	<div class="backstretch"  style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 450px; width: 600px; z-index: -999999; position: fixed;"></div>
+	<script type="text/javascript">
+		$.backstretch(["img/0.jpg","img/1.jpg","img/2.jpg","img/3.jpg","img/4.jpg","img/5.jpg","img/6.jpg","img/7.jpg", {speed: 150}]);
+	</script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
